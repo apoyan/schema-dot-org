@@ -9,10 +9,10 @@ module SchemaDotOrg
                   :rating_count,
                   :rating_value
 
-    validates :best_rating,  type: Integer
-    validates :worst_rating, type: Integer
+    validates :best_rating,  type: Float
+    validates :worst_rating, type: Float
     validates :rating_count, type: Integer
-    validates :rating_value, type: Integer
+    validates :rating_value, type: Float
 
     def _to_json_struct
       {

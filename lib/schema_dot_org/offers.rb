@@ -11,8 +11,8 @@ module SchemaDotOrg
                   :price_currency,
                   :offers
 
-    validates :high_price,    type: Integer
-    validates :low_price,      type: Integer
+    validates :high_price,     type: BigDecimal
+    validates :low_price,      type: BigDecimal
     validates :offer_count,    type: Integer
     validates :price_currency, type: String
     validates :offers,         type: Array, allow_nil: true

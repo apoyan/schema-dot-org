@@ -12,7 +12,7 @@ module SchemaDotOrg
 
     validates :availability,   type: String
     validates :url,            type: String
-    validates :price,          type: Integer
+    validates :price,          type: BigDecimal
     validates :price_currency, type: String
     validates :name,           type: String
 
