@@ -2,7 +2,7 @@
 
 require 'schema_dot_org'
 require 'schema_dot_org/aggregate_rating'
-require 'schema_dot_org/offers'
+require 'schema_dot_org/aggregate_offer'
 
 module SchemaDotOrg
   class Product < SchemaType
@@ -12,7 +12,7 @@ module SchemaDotOrg
 
     validates :name, type: String
     validates :aggregate_rating, type: SchemaDotOrg::AggregateRating
-    validates :offers, type: SchemaDotOrg::Offers
+    validates :offers, type: SchemaDotOrg::AggregateOffer
 
     def _to_json_struct
       {

@@ -4,7 +4,7 @@ require 'schema_dot_org'
 require 'schema_dot_org/offer'
 
 module SchemaDotOrg
-  class Offers < SchemaType
+  class AggregateOffer < SchemaType
     attr_accessor :high_price,
                   :low_price,
                   :offer_count,
