@@ -8,7 +8,8 @@ module SchemaDotOrg
   class Product < SchemaType
     attr_accessor :name,
                   :aggregate_rating,
-                  :offers
+                  :offers,
+                  :image
 
     validates :image, type: String, allow_nil: true
     validates :name, type: String
