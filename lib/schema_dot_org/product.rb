@@ -12,7 +12,7 @@ module SchemaDotOrg
                   :image
 
     validates :image, type: String, allow_nil: true
-    validates :name, type: String
+    validates :name, type: String, allow_nil: true
     validates :aggregate_rating, type: SchemaDotOrg::AggregateRating
     validates :offers, type: SchemaDotOrg::AggregateOffer
 

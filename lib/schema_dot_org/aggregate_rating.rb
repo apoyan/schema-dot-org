@@ -12,7 +12,7 @@ module SchemaDotOrg
     validates :best_rating,  type: Float
     validates :worst_rating, type: Float
     validates :rating_count, type: Integer
-    validates :rating_value, type: Float
+    validates :rating_value, type: Float, allow_nil: true
 
     def _to_json_struct
       {
