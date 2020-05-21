@@ -7,7 +7,7 @@ module SchemaDotOrg
   class CreativeWorkSeries < SchemaType
     attr_accessor :aggregate_rating
 
-    validates :aggregate_rating, type: SchemaDotOrg::AggregateRating, presence: true
+    validates :aggregate_rating, type: SchemaDotOrg::AggregateRating
 
     def _to_json_struct
       {
