@@ -11,7 +11,7 @@ module SchemaDotOrg
 
     def _to_json_struct
       {
-        'aggregateRating' => aggregate_rating
+        'aggregateRating' => aggregate_rating.to_json_struct
       }
     end
   end

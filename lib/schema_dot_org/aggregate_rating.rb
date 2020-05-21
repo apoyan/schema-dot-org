@@ -23,7 +23,7 @@ module SchemaDotOrg
         "worstRating" => worst_rating,
         "ratingCount" => rating_count,
         "ratingValue" => rating_value,
-        "itemReviewed" => item_reviewed
+        "itemReviewed" => item_reviewed.to_json_struct
       }
     end
   end
